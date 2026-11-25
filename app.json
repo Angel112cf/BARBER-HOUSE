@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "BarberHouse",
+    "slug": "BarberHouse",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.barberhouse.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "BARBER HOUSE necesita acceder a tu ubicación para gestionar los servicios a domicilio."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "BARBER HOUSE necesita acceder a tus fotografías para seleccionar una imagen de referencia.",
+          "cameraPermission": "BARBER HOUSE necesita acceder a tu cámara para tomar una fotografía de referencia.",
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}
